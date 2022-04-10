@@ -1,0 +1,22 @@
+#include<stdio.h>
+int sum(int a);
+
+void main()
+{
+	int x,num;
+	printf("enter the number:\n");
+	scanf("%d",&num);
+	x=sum(num);
+	printf("the sum of integer is :%d",x);
+	
+}
+
+int sum(int a)
+{
+	int i,res=0;
+	for(i=1;i<=a;i++)
+	{
+		res=res+i;
+	}
+	return res;
+}
